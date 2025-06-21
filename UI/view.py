@@ -32,9 +32,9 @@ class View(ft.UserControl):
         row1 = ft.Row([cont, self._btnCreaGrafo], alignment=ft.MainAxisAlignment.CENTER,
                       vertical_alignment=ft.CrossAxisAlignment.END)
 
-        self._txtIntK = ft.TextField(label="Dimensione K")
+        self._txtIntK = ft.TextField(label="Dimensione K", disabled=True)
         self._btnCerca = ft.ElevatedButton(text="Cerca Dream Team",
-                                           on_click=self._controller.handleCerca)
+                                           on_click=self._controller.handleCerca, disabled=True)
         row2 = ft.Row([ft.Container(self._txtIntK, width=250),
             ft.Container(self._btnCerca, width=250)
         ], alignment=ft.MainAxisAlignment.CENTER)
