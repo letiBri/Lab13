@@ -50,6 +50,23 @@ class Model:
                 bestDriver = (key, value)
         return bestDriver
 
+    # def getBestDriver(self):  # soluzione prof
+    #     best = 0
+    #     bestdriver = None
+    #     for n in self._graph.nodes:
+    #         score = 0
+    #         for e_out in self._graph.out_edges(n, data=True):
+    #             score += e_out[2]["weight"]
+    #         for e_in in self._graph.in_edges(n, data=True):
+    #             score -= e_in[2]["weight"]
+    #
+    #         if score > best:
+    #             bestdriver = n
+    #             best = score
+    #
+    #     print(f"Best driver: {bestdriver}, with score {best}")
+    #     return bestdriver, best
+
     def getDreamTeam(self, k):
         self._bestDreamTeam = []
         self._bestTasso = 100000  # metto un valore alto perchè io voglio trovare il minimo
